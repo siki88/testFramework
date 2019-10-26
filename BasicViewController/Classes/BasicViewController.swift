@@ -9,9 +9,14 @@
 import UIKit
 
 open class BasicViewController: UIViewController {
+    
+    internal var labelString: String!
+    
+    @IBOutlet weak var label: UILabel!
 
     override open func viewDidLoad() {
         super.viewDidLoad()
+        self.label.text = self.labelString
 
         // Do any additional setup after loading the view.
     }

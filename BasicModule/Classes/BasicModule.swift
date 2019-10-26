@@ -19,7 +19,7 @@ open class BasicModule{
     }
     
     public func getController(params: Any?, completion: (_ controller: UIViewController?) -> Void){
-        let vc = BasicViewController.instance()
+        let vc = BasicViewController.instance(label: self.label)
         completion(vc)
     }
     

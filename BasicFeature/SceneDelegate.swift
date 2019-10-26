@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         
-        let module = BasicModule.init()
+        let module = BasicModule.init(label: "HELLO ALL - basicmodule")
 //        let params: (label: String) = (label: "Hi. there all")
         let params: String = "Hello All"
         module.getController(params: params) { (vc) in

@@ -16,10 +16,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZR-0S-Chi">
-                                <rect key="frame" x="107" y="440.5" width="200" height="25"/>
+                                <rect key="frame" x="8" y="440.5" width="398" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="SQU-MP-VYx"/>
-                                    <constraint firstAttribute="width" constant="200" id="bGm-R1-hH8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -29,10 +28,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="NZR-0S-Chi" firstAttribute="centerY" secondItem="ecp-Rr-H7f" secondAttribute="centerY" id="CGi-48-aQe"/>
+                            <constraint firstItem="ecp-Rr-H7f" firstAttribute="trailing" secondItem="NZR-0S-Chi" secondAttribute="trailing" constant="8" id="Oqf-13-JjP"/>
+                            <constraint firstItem="NZR-0S-Chi" firstAttribute="leading" secondItem="ecp-Rr-H7f" secondAttribute="leading" constant="8" id="TiO-Lm-jZb"/>
                             <constraint firstItem="NZR-0S-Chi" firstAttribute="centerX" secondItem="ecp-Rr-H7f" secondAttribute="centerX" id="Wda-of-0ej"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ecp-Rr-H7f"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="NZR-0S-Chi" id="Z5b-6v-OaQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emR-Vk-Rho" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
