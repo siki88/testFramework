@@ -12,14 +12,16 @@ import BasicViewController
 open class BasicModule{
     
     internal var label: String
+    internal var delegate: BasicViewDelegateProtocol
     
-    public init(label: String) {
+    public init(label: String, delegate: BasicViewDelegateProtocol) {
         self.label = label
+        self.delegate = delegate
         
     }
     
     public func getController(params: Any?, completion: (_ controller: UIViewController?) -> Void){
-        let vc = BasicViewController.instance(label: self.label)
+        let vc = BasicViewController.instance(label: self.label, delegate: self.delegate)
         completion(vc)
     }
     

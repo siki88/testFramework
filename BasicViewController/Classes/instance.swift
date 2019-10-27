@@ -14,9 +14,10 @@ extension BasicViewController {
         return UIStoryboard.init(name: "BasicView", bundle: Bundle.init(for: BasicViewController.self))
     }
     
-    public static func instance(label: String) -> BasicViewController? {
+    public static func instance(label: String, delegate: BasicViewDelegateProtocol!) -> BasicViewController? {
         let vc = self.storyboard.instantiateInitialViewController() as? BasicViewController
         vc?.labelString = label
+        vc?.delegate = delegate
         // add deps here
         return vc
     }

@@ -9,10 +9,15 @@
 import UIKit
 import BasicModule
 import BasicViewController
+import BasicProvider
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    lazy var provider: BasicProvider! = {
+        return BasicProvider.init()
+    }()
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -22,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         
-        let module = BasicModule.init(label: "HELLO ALL - basicmodule")
+        let module = BasicModule.init(label: "HELLO-basicmodule from sceneDelegate", delegate: self)
 //        let params: (label: String) = (label: "Hi. there all")
         let params: String = "Hello All"
         module.getController(params: params) { (vc) in
@@ -66,6 +71,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+
+}
+
+extension SceneDelegate: BasicViewDelegateProtocol{
+    
+    public func doSomething(completion: @escaping (String) -> Void) {
+        self.provider.doSomethingRemotely(completion: completion)
+        print("hi there from AppDelegate")
+    }
 
 }
 
