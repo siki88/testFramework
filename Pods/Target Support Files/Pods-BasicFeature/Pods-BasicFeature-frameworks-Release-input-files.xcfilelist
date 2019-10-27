@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-BasicFeature/Pods-BasicFeature-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BasicViewController/BasicViewController.framework
+${BUILT_PRODUCTS_DIR}/BasicModule/BasicModule.framework

@@ -1,0 +1,6 @@
+framework module BasicViewController {
+  umbrella header "BasicViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

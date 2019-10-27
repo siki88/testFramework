@@ -1,0 +1,24 @@
+{
+  "name": "BasicViewController",
+  "version": "0.1.0",
+  "summary": "A summary of your BasicViewController",
+  "swift_versions": "5",
+  "description": "A description about your BasicViewController",
+  "homepage": "https://github.com/davidthorn/BasicViewController.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "David Thorn": "david.thorn221278@googlemail.com"
+  },
+  "platforms": {
+    "ios": "13.1"
+  },
+  "source": {
+    "git": "https://github.com/davidthorn/BasicViewController.git",
+    "tag": "0.1.0"
+  },
+  "source_files": "BasicViewController/Classes/**/*.{swift}",
+  "resources": "BasicViewController/Assets/**/*.{storyboard,xib,plist,xcassets}",
+  "swift_version": "5"
+}

@@ -1,0 +1,27 @@
+PODS:
+  - BasicModule (0.1.0):
+    - BasicViewController
+  - BasicProvider (0.1.0)
+  - BasicViewController (0.1.0)
+
+DEPENDENCIES:
+  - BasicModule (from `.`)
+  - BasicProvider (from `.`)
+  - BasicViewController (from `.`)
+
+EXTERNAL SOURCES:
+  BasicModule:
+    :path: "."
+  BasicProvider:
+    :path: "."
+  BasicViewController:
+    :path: "."
+
+SPEC CHECKSUMS:
+  BasicModule: 288b24e71678b6e5e18cb45acc11698cb22ac44d
+  BasicProvider: caad9b4bfa200bca318a9cb9681a73f7ae1ccea2
+  BasicViewController: 7466b499ab0c8198a57156fbc2d46359ce79af4f
+
+PODFILE CHECKSUM: 7d6c00138aeaa4eb0e5a9975fedc129ed89af0d4
+
+COCOAPODS: 1.7.5

@@ -1,0 +1,28 @@
+{
+  "name": "BasicModule",
+  "version": "0.1.0",
+  "summary": "A summary of your BasicModule",
+  "swift_versions": "5",
+  "description": "A description about your BasicModule",
+  "homepage": "https://github.com/davidthorn/BasicModule.git",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "David Thorn": "david.thorn221278@googlemail.com"
+  },
+  "platforms": {
+    "ios": "13.1"
+  },
+  "source": {
+    "git": "https://github.com/davidthorn/BasicModule.git",
+    "tag": "0.1.0"
+  },
+  "source_files": "BasicModule/Classes/**/*.{swift}",
+  "dependencies": {
+    "BasicViewController": [
+
+    ]
+  },
+  "swift_version": "5"
+}
