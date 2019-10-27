@@ -8,15 +8,15 @@ s.description  = <<-DESC
 A description about your BasicViewController
 DESC
 
-s.homepage     = "https://github.com/davidthorn/BasicViewController.git"
+s.homepage     = "https://github.com/siki88/testFramework.git"
 
 s.license      = { :type => "MIT" }
 
-s.author       = { "David Thorn" => "david.thorn221278@googlemail.com" }
+s.author       = { "siki" => "siki@sladkej.cz" }
 
 s.ios.deployment_target = "13.1"
 
-s.source       = { :git => "https://github.com/davidthorn/BasicViewController.git", :tag => "#{s.version}" }
+s.source       = { :git => "https://github.com/siki88/testFramework.git", :tag => "#{s.version}" }
 
 s.source_files  = "BasicViewController/Classes/**/*.{swift}"
 
